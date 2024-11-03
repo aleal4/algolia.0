@@ -1,0 +1,179 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.search-panel {
+  display: flex;
+  gap: 20px;
+}
+
+.search-panel__filters {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.search-panel__results {
+  flex-grow: 1;
+}
+
+.searchbox {
+  margin-bottom: 20px;
+}
+
+/* Critical grid layout fixes */
+.ais-Hits {
+  margin: 0;
+}
+
+.ais-Hits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ais-Hits-item {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+article {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hit-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hit-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.hit-content h1 {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  color: #343a40;
+}
+
+.hit-content p {
+  margin: 0 0 8px 0;
+  font-size: 0.9em;
+  color: #495057;
+}
+
+/* Refinement styles */
+.ais-RefinementList-list,
+.ais-Menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ais-RefinementList-item,
+.ais-Menu-item {
+  margin-bottom: 8px;
+}
+
+.ais-Panel {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ais-Panel-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Pagination */
+.ais-Pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ais-Pagination-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.ais-Pagination-item {
+  margin: 0;
+}
+
+.ais-Pagination-link {
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* SearchBox styles */
+.ais-SearchBox {
+  margin-bottom: 20px;
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  display: none;
+}
